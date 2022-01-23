@@ -1,5 +1,6 @@
 module.exports = {
     content: ["./src/**/*.{js,jsx}"],
+    purge: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx}"],
     theme: {
         fontFamily: {
             mono: ["Fira Code", "SFMono-Regular"],
