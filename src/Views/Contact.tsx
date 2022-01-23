@@ -35,7 +35,13 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                    <form name="contact" className="flex flex-col text-nightBlue-800" method="POST" data-netlify="true">
+                    <form
+                        name="contact"
+                        className="flex flex-col text-nightBlue-800"
+                        data-netlify="true"
+                        netlify-honeypot="bot-field"
+                        hidden
+                    >
                         <input
                             type="text"
                             placeholder="name"
