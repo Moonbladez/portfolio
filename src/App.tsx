@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { Navbar } from "./Components/Navbar";
+import { MobileNavbar } from "./Components/MobileNavbar";
+
+import { About } from "./Views/About";
+import { Skills } from "./Views/Skills";
+import { Portfolio } from "./Views/Portfolio";
+import { Contact } from "./Views/Contact";
+
+import { useWindowSize } from "./hooks/useWindowSize";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const screenSize = useWindowSize().width;
+
+    return (
+        <div className="App bg-nightBlue-500 min-h-screen">
+            {screenSize && screenSize < 640 ? <MobileNavbar /> : <Navbar />}
+            <About />
+            <Skills />
+            <Portfolio />
+            <Contact />
+        </div>
+    );
 }
 
 export default App;
