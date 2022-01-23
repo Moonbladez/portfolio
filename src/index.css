@@ -28,8 +28,9 @@
 
     h3 {
         @apply text-2xl
-        text-magenta-500
+        text-nightBlue-200
         font-display
-        mb-8;
+        mb-8
+        tracking-wider;
     }
 }
