@@ -14,7 +14,11 @@ export const About = () => {
                         I am currently studying at Noroff for the past three years, however I have also been self taught
                         for the last five years
                     </p>
-                    <p>I love web development as I love a challange, and I love to learn new things. </p>
+                    <p className="mb-6">
+                        I love web development as I love a challange, and I love to learn new things.{" "}
+                    </p>
+
+                    <p>Get in touch if you think we could work together!</p>
                 </div>
                 <div>
                     <Link

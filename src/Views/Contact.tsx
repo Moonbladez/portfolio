@@ -35,19 +35,19 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                    <form name="contact" className="flex flex-col" method="POST" data-netlify="true">
+                    <form name="contact" className="flex flex-col text-nightBlue-800" method="POST" data-netlify="true">
                         <input
                             type="text"
                             placeholder="name"
                             required
-                            className="mb-6 ring ring-pink-200 p-2 rounded border-2 border-gray-900"
+                            className="mb-6 ring ring-pink-200 p-2 rounded border-2 border-gray-900 placeholder-nightBlue-200"
                         />
                         <input
                             type="email"
                             name="email"
                             placeholder="email"
                             required
-                            className="mb-6  ring ring-pink-200 p-2 rounded border-2 border-gray-900"
+                            className="mb-6  ring ring-pink-200 p-2 rounded border-2 border-gray-900 placeholder-nightBlue-200"
                         />
                         <textarea
                             name=""
@@ -56,9 +56,12 @@ export const Contact = () => {
                             rows={5}
                             placeholder="message"
                             required
-                            className="mb-6 ring ring-pink-200 p-2 rounded border-2 border-gray-900"
+                            className="mb-6 ring ring-pink-200 p-2 rounded border-2 border-gray-900 placeholder-nightBlue-200"
                         ></textarea>
-                        <button className="bg-gradient-to-r hover:bg-magenta-400 from-magenta-300 via-magenta-500 to-magenta-700 py-2 rounded-lg font-bold uppercase tracking-wider text-xl font-display">
+                        <button
+                            className="bg-gradient-to-r hover:bg-magenta-400 from-magenta-300 via-magenta-500 to-magenta-700 py-2 rounded-lg font-bold uppercase tracking-wider text-xl font-display"
+                            type="submit"
+                        >
                             Send
                         </button>
                     </form>
