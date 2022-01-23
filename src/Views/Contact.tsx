@@ -35,7 +35,7 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                    <form className="flex flex-col">
+                    <form name="contact" className="flex flex-col" method="POST" data-netlify="true">
                         <input
                             type="text"
                             placeholder="name"
